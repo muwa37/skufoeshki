@@ -1,1 +1,15 @@
-##Educational e-commerce app with react and typescript
+# Educational e-commerce app with react and typescript
+
+Скуфоешки - фронтенд приложение для интернет магазина с легкой ноткой иронии.
+
+## Функционал
+
+*Корзина с возможностью изменять количество товара или удалять его
+*Список товаров с отдельными страницами с описанием для каждого товара
+
+## Технологии
+
+*React
+*Typescript
+*CSS-module
+*Webpack
