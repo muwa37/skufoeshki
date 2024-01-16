@@ -1,14 +1,13 @@
 import React from "react";
 
-const Contacts = () => {
+const ProductCard = () => {
     return (
         <div>
             <h1>
-                zdes budut linki na git i tg
+               vkusnyashka
             </h1>
         </div>
     )
 }
 
-export default Contacts;
-
+export default ProductCard;
