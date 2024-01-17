@@ -1,9 +1,17 @@
-import React from "react";
-import ProductCardList from '../components/logic/ProductCardList/ProductCardList';
+import React, { useEffect, useState } from "react";
+import ProductService from '../API/ProductsService';
+import ProductCardsList from '../components/logic/ProductCardsList/ProductCardsList';
 const Home = () => {
+    const [products, setProducts] = useState<any>([]);
+    const response = ProductService.getAll();
+
+    useEffect(() => {
+        setProducts([...products, ...response])
+    }, [])
+
     return (
         <div>
-            <ProductCardList/>
+            <ProductCardsList/>
         </div>
     )
 }
