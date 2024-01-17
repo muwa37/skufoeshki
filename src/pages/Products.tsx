@@ -1,11 +1,9 @@
 import React from "react";
-
+import ProductCardList from '../components/logic/ProductCardList/ProductCardList';
 const Home = () => {
     return (
         <div>
-            <h1>
-               mi banchim govnom
-            </h1>
+            <ProductCardList/>
         </div>
     )
 }
