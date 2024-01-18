@@ -1,21 +1,22 @@
 import React from 'react';
 import ProductCard from '../ProductCard/ProductCard';
+import classes from './ProductCardsList.module.css'
 
-const ProductCardList = () => {
+interface IProductCardsList {
+    products: any;
+}
+
+const ProductCardList:React.FC<IProductCardsList> = ({products}) => {
     return (
-        <div>
-            <ProductCard
-                props='1337'
-                card='228'
-            />
-            <ProductCard
-                props='1337'
-                card='228'
-            />
-            <ProductCard
-                props='1337'
-                card='228'
-            />
+        <div
+            className={classes.ProductCardsList}
+        >
+            {products.map((product:any) =>
+                <ProductCard
+                    key={product.productId}
+                    product = {product}
+                />
+            )}
         </div>
     )
 }

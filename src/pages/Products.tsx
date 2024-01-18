@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import ProductService from '../API/ProductsService';
 import ProductCardsList from '../components/logic/ProductCardsList/ProductCardsList';
 const Home = () => {
@@ -11,7 +11,9 @@ const Home = () => {
 
     return (
         <div>
-            <ProductCardsList/>
+            <ProductCardsList
+                products = {products}
+            />
         </div>
     )
 }

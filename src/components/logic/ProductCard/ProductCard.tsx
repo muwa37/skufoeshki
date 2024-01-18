@@ -4,8 +4,8 @@ import CustomBtn from '../../ui/CustomBtn/CustomBtn';
 import classes from './ProductCard.module.css'
 
 interface IProps {
-    props: any
-    card: any
+    props?: any
+    product?: any
 }
 
 const ProductCard:React.FC<IProps> = (props:IProps) => {
@@ -15,7 +15,7 @@ const ProductCard:React.FC<IProps> = (props:IProps) => {
         <div
             className={classes.ProductCard}
             onClick={() => {
-                router(`/products/${props.card.id}`)
+                router(`/products/${props.product.productId}`)
             }}
         >
             <div
@@ -24,20 +24,17 @@ const ProductCard:React.FC<IProps> = (props:IProps) => {
                 <div
                     className={classes.ProductCardImg}
                 >
-                    {props.card.img}
-                    pic
+                    {props.product.productImg}
                 </div>
                 <div
                     className={classes.ProductCardName}
                 >
-                    name
-                    {props.card.title}
+                    {props.product.productTitle}
                 </div>
                 <div
                     className={classes.ProductCardPrice}
                 >
-                    price
-                    {props.card.price}
+                    {props.product.productPrice}
                 </div>
                 <CustomBtn
                     onClick={(e:any) => {
