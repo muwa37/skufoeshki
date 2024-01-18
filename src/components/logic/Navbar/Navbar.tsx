@@ -1,6 +1,7 @@
 import React from "react";
 import {Link} from 'react-router-dom'
 import classes from './Navbar.module.css'
+import CartBtn from '../CartBtn/CartBtn';
 
 const Navbar = (props:any) => {
     return (
@@ -29,7 +30,7 @@ const Navbar = (props:any) => {
                 className={classes.NavbarCart}
                 to='/cart'
             >
-                cart
+                <CartBtn/>
             </Link>
         </div>
     )

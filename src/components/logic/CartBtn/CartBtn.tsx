@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const CartBtn = () => {
+    const [cartItemsCount, setCartItemsCount] = useState(0)
+
     return(
         <div>
-            cart
+            <div>
+                cart
+            </div>
+            <div>
+                {cartItemsCount}
+            </div>
         </div>
+        
     )
 }
 
