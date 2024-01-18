@@ -1,62 +1,62 @@
 const fakeResponse = [
     {
-        productId:1,
+        productId:'1',
         productImg: 'link to img1',
         productTitle: 'sample title1',
         productDescription: 'sample description1',
         productPrice: '$ 1337'
     },
     {
-        productId:2,
+        productId:'2',
         productImg: 'link to img2',
         productTitle: 'sample title2',
         productDescription: 'sample description2',
         productPrice: '$ 1337'
     },
     {
-        productId:3,
+        productId:'3',
         productImg: 'link to img3',
         productTitle: 'sample title3',
         productDescription: 'sample description3',
         productPrice: '$ 1337'
     },
     {
-        productId:4,
+        productId:'4',
         productImg: 'link to img4',
         productTitle: 'sample title4',
         productDescription: 'sample description4',
         productPrice: '$ 1337'
     },
     {
-        productId:5,
+        productId:'5',
         productImg: 'link to img5',
         productTitle: 'sample title5',
         productDescription: 'sample description5',
         productPrice: '$ 1337'
     },
     {
-        productId:6,
+        productId:'6',
         productImg: 'link to img6',
         productTitle: 'sample title6',
         productDescription: 'sample description6',
         productPrice: '$ 1337'
     },
     {
-        productId:7,
+        productId:'7',
         productImg: 'link to img7',
         productTitle: 'sample title7',
         productDescription: 'sample description7',
         productPrice: '$ 1337'
     },
     {
-        productId:8,
+        productId:'8',
         productImg: 'link to img8',
         productTitle: 'sample title8',
         productDescription: 'sample description8',
         productPrice: '$ 1337'
     },
     {
-        productId:9,
+        productId:'9',
         productImg: 'link to img9',
         productTitle: 'sample title9',
         productDescription: 'sample description9',
@@ -69,8 +69,8 @@ export default class ProductService {
         const response = fakeResponse;
         return response;
     }
-    static getById(id:any): any {
+    static getById(id: any): any {
         const response = fakeResponse;
-        response.find(product => product.productId === id)
+        return response.find(product => product.productId === id)
     }
 }

@@ -1,8 +1,8 @@
-import Home from "../pages/Home";
-import Contacts from '../pages/Contacts';
-import Products from '../pages/Products';
-import ProductPage from '../pages/ProductPage';
-import Cart from '../pages/Cart';
+import Home from "../pages/Home/Home";
+import Contacts from '../pages/Contacts/Contacts';
+import Products from '../pages/Products/Products';
+import ProductPage from '../pages/ProductPage/ProductPage';
+import Cart from '../pages/Cart/Cart';
 
 const routes = [
     {path: '/home', element: <Home/>},
