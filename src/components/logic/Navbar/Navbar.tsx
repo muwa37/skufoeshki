@@ -9,7 +9,7 @@ const Navbar = (props:any) => {
             <div className={classes.NavbarLinks}>
                 <Link 
                     className={classes.NavbarLink}
-                    to='/home'
+                    to='/'
                 >
                     home
                 </Link>

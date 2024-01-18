@@ -1,6 +1,5 @@
 import React from 'react';
 import {useNavigate} from 'react-router-dom';
-import CustomBtn from '../../ui/CustomBtn/CustomBtn';
 import classes from './ProductCard.module.css'
 
 interface IProps {
@@ -36,14 +35,6 @@ const ProductCard:React.FC<IProps> = (props:IProps) => {
                 >
                     $ {props.product.productPrice}
                 </div>
-                <CustomBtn
-                    onClick={(e:any) => {
-                        e.stopPropagation();
-                        console.log('v korzinu');
-                    }}
-                >
-                    add to cart
-                </CustomBtn>
             </div>
         </div>
     )

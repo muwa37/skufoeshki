@@ -8,7 +8,7 @@ import {
     CLEAR_CART,
     COUNT_CART_TOTALS,
     CHECKOUT,
-  } from "../utils/cartActions";
+} from "../utils/cartActions";
 
 const getLocalStorage = () => {
   let cart = localStorage.getItem("cart");
@@ -26,7 +26,7 @@ const initialState = {
   isCheckout: false,
 };
 
-const CartContext = createContext('');
+const CartContext = createContext(undefined);
 
 export const CartProvider = ({ children }:any) => {
   const [state, dispatch] = useReducer(cartReducer, initialState);
@@ -36,7 +36,6 @@ export const CartProvider = ({ children }:any) => {
     localStorage.setItem("cart", JSON.stringify(state.cart));
   }, [state.cart]);
 
-  //? Handlers
   const addToCart = (product:any, amount:any) => {
     dispatch({ type: ADD_TO_CART, payload: { product, amount } });
   };

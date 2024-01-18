@@ -1,16 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useCartContext } from '../../../context/CartProvider';
 
 const CartBtn = () => {
-    const [cartItemsCount, setCartItemsCount] = useState(0)
+    const {cartCount}:any = useCartContext();
 
     return(
         <div>
             <div>
                 cart
-            </div>
-            <div>
-                {cartItemsCount}
-            </div>
+                <div>
+                    {cartCount}
+                </div>
+            </div>    
         </div>
         
     )

@@ -67,20 +67,20 @@ export const cartReducer = (state:any , action:any) => {
     }
   
     if (type === COUNT_CART_TOTALS) {
-      const { total_items, total_price } = state.cart.reduce(
+      const { cartCount, cartPrice } = state.cart.reduce(
         (total:any, cartItem:any) => {
-          const { amount, price } = cartItem;
-          total.total_items += amount;
-          total.total_price += price * amount;
-  
-          return total;
+            const { amount, price } = cartItem;
+            total.cartCount += amount;
+            total.cartPrice += price * amount;
+    
+            return total;
         },
         {
-          total_price: 0,
-          total_items: 0,
+            cartPrice: 0,
+            cartCount: 0,
         }
       );
-      return { ...state, total_items, total_price };
+      return { ...state, cartCount, cartPrice };
     }
   
     if (type === CHECKOUT) {
@@ -90,6 +90,4 @@ export const cartReducer = (state:any , action:any) => {
         cart: [],
       };
     }
-  
-    throw new Error(`No Matching "${type}" - action type `);
   };
