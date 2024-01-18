@@ -1,8 +1,8 @@
-.CustomNavbar {
+.Navbar {
     display: flex;
     justify-content: space-between;
 }
 
-.CustomNavbarLink {
+.NavbarLink {
     padding-right: 5px;
 }

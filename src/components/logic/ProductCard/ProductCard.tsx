@@ -34,7 +34,7 @@ const ProductCard:React.FC<IProps> = (props:IProps) => {
                 <div
                     className={classes.ProductCardPrice}
                 >
-                    {props.product.productPrice}
+                    $ {props.product.productPrice}
                 </div>
                 <CustomBtn
                     onClick={(e:any) => {

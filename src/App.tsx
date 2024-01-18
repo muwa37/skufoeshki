@@ -1,16 +1,16 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';
-import CustomFooter from './components/ui/CustomFooter/CustomFooter';
-import CustomNavbar from './components/ui/CustomNavbar/CustomNavbar';
 import AppRouter from './router/AppRouter'
+import Navbar from './components/logic/Navbar/Navbar';
+import Footer from './components/logic/Footer/Footer';
 
 function App() {
   return (
     <BrowserRouter>
-      <CustomNavbar/>
+      <Navbar/>
       <AppRouter/>
-      <CustomFooter/>
+      <Footer/>
     </BrowserRouter>
   );
 }

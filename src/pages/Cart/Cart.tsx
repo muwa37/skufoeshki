@@ -1,11 +1,12 @@
 import React from "react";
+import CartList from '../../components/logic/CartList/CartList';
+import CartTotal from '../../components/logic/CartTotal/CartTotal';
 
 const Cart = () => {
     return (
         <div>
-            <h1>
-                fancy pokupochki
-            </h1>
+            <CartList/>
+            <CartTotal/>
         </div>
     )
 }

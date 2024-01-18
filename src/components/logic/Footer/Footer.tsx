@@ -1,5 +1,5 @@
 import React from "react";
-import classes from './CustomFooter.module.css'
+import classes from './Footer.module.css'
 
 const CustomFooter = () => {
     return (
