@@ -1,14 +1,16 @@
-import React, {useEffect, useState} from "react";
+import React, {FC, useEffect, useState} from "react";
 import { useNavigate, useParams } from 'react-router-dom';
 import ProductService from '../../API/ProductsService';
 import ProductAdder from '../../components/logic/ProductAdder/ProductAdder';
 import CustomBtn from '../../components/ui/CustomBtn/CustomBtn';
 import classes from './ProductPage.module.css'
 
+import { IProduct, IProductPageParams } from '../../types/types';
 
-const ProductPage = () => {
-    const params = useParams();
-    const [product, setProduct] = useState<any>({});
+
+const ProductPage:FC = () => {
+    const params = useParams<IProductPageParams>();
+    const [product, setProduct] = useState<IProduct>();
 
     useEffect(() => {
         setProduct(ProductService.getById(params.id))
@@ -29,7 +31,7 @@ const ProductPage = () => {
                 className={classes.Product}
             >
                 <div className={classes.ProductImg}>
-                    {product.productImg}
+                    {product?.productImg}
                 </div>
                 <div
                     className={classes.ProductBody}
@@ -37,17 +39,17 @@ const ProductPage = () => {
                     <div
                         className={classes.ProductTitle}
                     >
-                        {product.productTitle}
+                        {product?.productTitle}
                     </div>
                     <div
                         className={classes.ProductPrice}
                     >
-                        {product.productPrice}
+                        {product?.productPrice}
                     </div>
                     <div
                         className={classes.ProductDescription}
                     >
-                        {product.productDescription}
+                        {product?.productDescription}
                     </div>
                     <ProductAdder 
                         product={product}

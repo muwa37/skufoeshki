@@ -1,3 +1,5 @@
+import { IProduct } from '../types/types';
+
 const fakeResponse = [
     {
         productId:'1',
@@ -65,11 +67,11 @@ const fakeResponse = [
 ]
 
 export default class ProductService {
-    static getAll(): any {
+    static getAll(): IProduct[] {
         const response = fakeResponse;
         return response;
     }
-    static getById(id: any): any {
+    static getById(id: string | undefined): IProduct | undefined {
         const response = fakeResponse;
         return response.find(product => product.productId === id)
     }
