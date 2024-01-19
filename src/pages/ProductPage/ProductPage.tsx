@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import { useNavigate, useParams } from 'react-router-dom';
 import ProductService from '../../API/ProductsService';
+import ProductAdder from '../../components/logic/ProductAdder/ProductAdder';
 import CustomBtn from '../../components/ui/CustomBtn/CustomBtn';
 import classes from './ProductPage.module.css'
 
@@ -48,9 +49,9 @@ const ProductPage = () => {
                     >
                         {product.productDescription}
                     </div>
-                    <CustomBtn>
-                        add to cart
-                    </CustomBtn>
+                    <ProductAdder 
+                        product={product}
+                    />
                 </div>
             </div>
         </div>

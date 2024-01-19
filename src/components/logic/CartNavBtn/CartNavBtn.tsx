@@ -1,7 +1,7 @@
 import React from 'react';
 import { useCartContext } from '../../../context/CartProvider';
 
-const CartBtn = () => {
+const CartNavBtn = () => {
     const {cartCount}:any = useCartContext();
 
     return(
@@ -13,8 +13,7 @@ const CartBtn = () => {
                 </div>
             </div>    
         </div>
-        
     )
 }
 
-export default CartBtn;
+export default CartNavBtn;

@@ -12,10 +12,10 @@ export const cartReducer = (state:any , action:any) => {
   
     if (type === ADD_TO_CART) {
       const { product, amount } = payload;
-      const tempItem = state.cart.find((item:any) => item.id === product.id);
+      const tempItem = state.cart.find((item:any) => item.productId === product.productId);
       if (tempItem) {
         const tempCart = state.cart.map((item:any) => {
-          if (item.id === tempItem.id) {
+          if (item.productId === tempItem.productId) {
             let newAmount = item.amount + amount;
             return { ...item, amount: newAmount };
           } else {
@@ -24,12 +24,12 @@ export const cartReducer = (state:any , action:any) => {
         });
         return { ...state, cart: tempCart };
       } else {
-        const { id, title, image, price } = product;
+        const { productId, productTitle, productImg, productPrice } = product;
         const newItem = {
-          id,
-          title,
-          image,
-          price,
+          productId,
+          productTitle,
+          productImg,
+          productPrice,
           amount,
         };
         return { ...state, cart: [...state.cart, newItem], isCheckout: false };
@@ -37,9 +37,9 @@ export const cartReducer = (state:any , action:any) => {
     }
   
     if (type === TOGGLE_CART_ITEM) {
-      const { id, value } = payload;
+      const { productId, value } = payload;
       const tempCart = state.cart.map((item:any) => {
-        if (item.id === id) {
+        if (item.productId === productId) {
           if (value === "inc") {
             let newAmount = item.amount + 1;
             return { ...item, amount: newAmount };
@@ -58,7 +58,7 @@ export const cartReducer = (state:any , action:any) => {
     }
   
     if (type === REMOVE_CART_ITEM) {
-      const tempCart = state.cart.filter((item:any) => item.id !== payload);
+      const tempCart = state.cart.filter((item:any) => item.productId !== payload);
       return { ...state, cart: tempCart };
     }
   
@@ -69,9 +69,9 @@ export const cartReducer = (state:any , action:any) => {
     if (type === COUNT_CART_TOTALS) {
       const { cartCount, cartPrice } = state.cart.reduce(
         (total:any, cartItem:any) => {
-            const { amount, price } = cartItem;
+            const { amount, productPrice } = cartItem;
             total.cartCount += amount;
-            total.cartPrice += price * amount;
+            total.cartPrice += productPrice * amount;
     
             return total;
         },

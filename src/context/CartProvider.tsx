@@ -21,8 +21,8 @@ const getLocalStorage = () => {
 
 const initialState = {
   cart: getLocalStorage(),
-  total_price: 0,
-  total_items: 0,
+  cartPrice: 0,
+  cartCount: 0,
   isCheckout: false,
 };
 
@@ -40,12 +40,12 @@ export const CartProvider = ({ children }:any) => {
     dispatch({ type: ADD_TO_CART, payload: { product, amount } });
   };
 
-  const toggleAmount = (id:any, value:any) => {
-    dispatch({ type: TOGGLE_CART_ITEM, payload: { id, value } });
+  const toggleAmount = (productId:any, value:any) => {
+    dispatch({ type: TOGGLE_CART_ITEM, payload: { productId, value } });
   };
 
-  const removeItem = (id:any) => {
-    dispatch({ type: REMOVE_CART_ITEM, payload: id });
+  const removeItem = (productId:any) => {
+    dispatch({ type: REMOVE_CART_ITEM, payload: productId });
   };
 
   const clearCart = () => {
