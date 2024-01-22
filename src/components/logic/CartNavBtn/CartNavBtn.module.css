@@ -1,0 +1,28 @@
+.CartCount {
+    position: absolute;
+    border: 2px solid #FF9344;
+    border-radius: 50%;
+    padding: 12px;
+    top: 18px;
+    left: 6px; 
+    text-align: center;
+    background-color:#979797;
+    opacity: 0.8;
+    color: #FF9344;
+}
+.CartCount span {
+    position: absolute;
+    line-height: 0;
+    top: 50%;
+    left: 33%;
+    text-align: center;
+}
+.CartIcon {
+    width: 36px;
+    height: 36px;
+    margin: 12px;
+}
+
+.CartNavContainer {
+    position: relative;
+}

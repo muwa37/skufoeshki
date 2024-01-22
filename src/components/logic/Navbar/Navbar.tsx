@@ -1,38 +1,56 @@
 import React from "react";
-import {Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import classes from './Navbar.module.css'
 import CartNavBtn from '../CartNavBtn/CartNavBtn';
 
 const Navbar:React.FC = () => {
     return (
-        <div className={classes.Navbar}>
-            <div className={classes.NavbarLinks}>
-                <Link 
-                    className={classes.NavbarLink}
-                    to='/'
+        <nav className={classes.Navbar}>
+            <NavLink 
+                className={classes.NavbarAppName}
+                to='/'
+            >
+                сКуФоЕшКи
+            </NavLink>
+            <nav className={classes.NavbarLinks}>
+                <NavLink 
+                    className={({ isActive }) => {
+                        const linkClasses = [classes.NavbarLink];
+                        if (isActive) linkClasses.push(classes.active);
+                            return linkClasses.join(" "); 
+                    }}
+                    to='/home'
                 >
                     home
-                </Link>
-                <Link 
-                    className={classes.NavbarLink}
+                </NavLink>
+                <NavLink 
+                    className={({ isActive }) => {
+                        const linkClasses = [classes.NavbarLink];
+                        if (isActive) linkClasses.push(classes.active);
+                            return linkClasses.join(" "); 
+                    }}
                     to='/products'
                 >
                     products
-                </Link>
-                <Link 
-                    className={classes.NavbarLink}
+                </NavLink>
+                <NavLink 
+                    className={({ isActive }) => {
+                        const linkClasses = [classes.NavbarLink];
+                        if (isActive) linkClasses.push(classes.active);
+                            return linkClasses.join(" "); 
+                    }}
                     to='/contacts'
                 >
                     contacts
-                </Link>
-            </div>
-            <Link 
+                </NavLink>
+            </nav>
+            <NavLink 
                 className={classes.NavbarCart}
                 to='/cart'
             >
                 <CartNavBtn/>
-            </Link>
-        </div>
+            </NavLink>
+        </nav>
     )
 }
 

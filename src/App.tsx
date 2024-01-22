@@ -6,7 +6,7 @@ import Navbar from './components/logic/Navbar/Navbar';
 import Footer from './components/logic/Footer/Footer';
 
 function App() {
-  return (
+  return ( 
     <BrowserRouter>
       <Navbar/>
       <AppRouter/>

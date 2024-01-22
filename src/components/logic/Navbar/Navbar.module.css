@@ -1,8 +1,33 @@
 .Navbar {
+    margin-top: 12px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    color: initial;
+    height: 15%;
+    font-family: 'Bitter', serif;
 }
 
-.NavbarLink {
-    padding-right: 5px;
+.NavbarLink{
+    margin-right: 24px;
+    padding: 12px;
+    border: 2px solid #979797;
+    text-decoration: none;
+    border-radius: 12px;
+    color: #979797;
+}
+
+.NavbarAppName {
+    margin-right: 24px;
+    padding: 12px;
+    border: 2px solid #FF9344;
+    text-decoration: none;
+    border-radius: 12px;
+    color:#FF9344;
+}
+
+.Navbar a.active {
+    color: #FC8299;
+    border: 2px solid #FC8299;
+
 }
