@@ -1,0 +1,45 @@
+.AmountBtnsDecrease {
+    padding: 3px 1rem;
+    border: 2px solid #589abe;
+    border-radius: 50%;
+    
+    color: #589abe;
+    font-family: 'Bitter', serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    transition: 1s;
+    background-color: #bdbb8c;
+}
+
+.AmountBtnsIncrease {
+    padding: 3px 1rem;
+    border: 2px solid #517d32;
+    border-radius: 50%;
+    
+    color: #517d32;
+    font-family: 'Bitter', serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    transition: 1s;
+    background-color: #bdbb8c;
+}
+
+.AmountBtnsAmount {
+    padding: 3px 1rem;
+    
+    color: #ff6346;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.AmountBtnsDecrease:hover {
+    opacity: 0.7;
+    color: #517d32;
+    border: 2px solid #517d32;
+}
+
+.AmountBtnsIncrease:hover {
+    opacity: 0.7;
+    color: #589abe;
+    border: 2px solid #589abe;
+}

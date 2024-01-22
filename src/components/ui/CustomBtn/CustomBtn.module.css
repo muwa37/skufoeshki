@@ -15,9 +15,11 @@
 
 .CustomBtn:hover {
     opacity: 0.7;
+    color: #979797;
+    border: 2px solid #979797;
 }
 
 a {
     text-decoration: none;
-    color: #ff6346;
+    color: inherit;
 }

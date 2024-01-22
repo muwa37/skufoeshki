@@ -31,7 +31,7 @@ const ProductPage:React.FC = () => {
                 className={classes.Product}
             >
                 <div className={classes.ProductImg}>
-                    {product?.productImg}
+                    <img src={product?.productImg} alt={product?.productId} />
                 </div>
                 <div
                     className={classes.ProductBody}

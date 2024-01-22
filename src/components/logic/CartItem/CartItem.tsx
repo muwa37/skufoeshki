@@ -20,7 +20,7 @@ const CartItem:React.FC<ICartItem> = ({ productTitle, productPrice, amount, prod
             <div className={''}>
                 <img 
                     src={productImg} 
-                    alt={productTitle} 
+                    alt={productId} 
                 />
             </div>
             <div className={''}>

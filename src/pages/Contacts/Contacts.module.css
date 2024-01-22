@@ -1,0 +1,21 @@
+.ContactsMain {
+    display: flex;
+    align-items: center;
+}
+
+.ContactsContainer {
+    display: flex;
+    align-items: center;
+}
+
+.ContactsTitle {
+    font-weight: 800;
+    color: #979797;
+    font-size: 2rem;
+    margin-right: 24px;
+}
+
+.ContactsImg {
+    min-height: 48px;
+    align-content: center;
+}

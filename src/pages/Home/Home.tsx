@@ -17,7 +17,8 @@ const Home:React.FC = () => {
                 <h1 
                     className={classes.HomeTitle}
                 >
-                Проникаем не только в животик, но и в сердечко.
+                Проникая в животик - <br/>
+                проникаем в сердечко.
                 </h1>
                 <CustomBtn>
                     <Link

@@ -24,7 +24,7 @@ const ProductCard:React.FC<IProps> = (props:IProps) => {
                 <div
                     className={classes.ProductCardImg}
                 >
-                    {props?.product?.productImg}
+                    <img src={props?.product?.productImg} alt={props?.product?.productId} />
                 </div>
                 <div
                     className={classes.ProductCardName}
