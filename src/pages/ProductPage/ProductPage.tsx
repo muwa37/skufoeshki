@@ -1,4 +1,4 @@
-import React, {FC, useEffect, useState} from "react";
+import React, { useEffect, useState} from "react";
 import { useNavigate, useParams } from 'react-router-dom';
 import ProductService from '../../API/ProductsService';
 import ProductAdder from '../../components/logic/ProductAdder/ProductAdder';
@@ -8,7 +8,7 @@ import classes from './ProductPage.module.css'
 import { IProduct, IProductPageParams } from '../../types/types';
 
 
-const ProductPage:FC = () => {
+const ProductPage:React.FC = () => {
     const params = useParams<IProductPageParams>();
     const [product, setProduct] = useState<IProduct>();
 

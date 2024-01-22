@@ -1,16 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useCartContext } from '../../../context/CartProvider';
+import { ICartItem } from '../../../types/types';
 
 import AmountBtns from '../AmountBtns/AmountBtns';
 
-const CartItem = ({ productTitle, productPrice, amount, productId, productImg }:any) => {
+const CartItem:React.FC<ICartItem> = ({ productTitle, productPrice, amount, productId, productImg }:ICartItem) => {
     const { toggleAmount, removeItem }:any = useCartContext();
   
-    const increase = () => {
+    const increase = ():void => {
         toggleAmount(productId, "inc");
     };
-    const decrease = () => {
+    const decrease = ():void => {
         toggleAmount(productId, "dec");
     };
 
@@ -33,7 +34,7 @@ const CartItem = ({ productTitle, productPrice, amount, productId, productImg }:
                     $ {productPrice} x {amount} :
                     <br />
                     <span>
-                        $ {(productPrice * amount).toFixed(2)}
+                        $ {(productPrice * amount ?? 0).toFixed(2)}
                     </span>
                 </div>
             </div>

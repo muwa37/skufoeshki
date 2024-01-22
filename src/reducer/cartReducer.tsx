@@ -1,3 +1,4 @@
+import { IProduct } from '../types/types';
 import {
     ADD_TO_CART,
     REMOVE_CART_ITEM,
@@ -7,14 +8,18 @@ import {
     CHECKOUT,
   } from "../utils/cartActions";
 
-export const cartReducer = (state:any , action:any) => {
+  interface ICartItem extends IProduct {
+    amount: number
+  }
+
+export const cartReducer = (state:any, action:any) => {
     const { type, payload } = action;
   
     if (type === ADD_TO_CART) {
       const { product, amount } = payload;
-      const tempItem = state.cart.find((item:any) => item.productId === product.productId);
+      const tempItem = state.cart.find((item:ICartItem) => item.productId === product.productId);
       if (tempItem) {
-        const tempCart = state.cart.map((item:any) => {
+        const tempCart = state.cart.map((item:ICartItem) => {
           if (item.productId === tempItem.productId) {
             let newAmount = item.amount + amount;
             return { ...item, amount: newAmount };
@@ -39,26 +44,26 @@ export const cartReducer = (state:any , action:any) => {
     if (type === TOGGLE_CART_ITEM) {
       const { productId, value } = payload;
       const tempCart = state.cart.map((item:any) => {
-        if (item.productId === productId) {
-          if (value === "inc") {
-            let newAmount = item.amount + 1;
-            return { ...item, amount: newAmount };
-          }
-          if (value === "dec") {
-            let newAmount = item.amount - 1;
-            if (newAmount < 1) {
-              newAmount = 1;
+          if (item.productId === productId) {
+            if (value === "inc") {
+              let newAmount = item.amount + 1;
+              return { ...item, amount: newAmount };
             }
-            return { ...item, amount: newAmount };
+            if (value === "dec") {
+              let newAmount = item.amount - 1;
+              if (newAmount < 1) {
+                newAmount = 1;
+              }
+              return { ...item, amount: newAmount };
+            }
           }
-        }
-        return item;
-      });
+          return item;
+        });
       return { ...state, cart: tempCart };
     }
   
     if (type === REMOVE_CART_ITEM) {
-      const tempCart = state.cart.filter((item:any) => item.productId !== payload);
+      const tempCart = state.cart.filter((item:IProduct) => item.productId !== payload);
       return { ...state, cart: tempCart };
     }
   

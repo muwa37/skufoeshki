@@ -1,6 +1,8 @@
 import React from "react";
+import { IAmountBtnsProps } from '../../../types/types';
 
-const AmountBtns = ({ increase, decrease, amount }:any) => {
+
+const AmountBtns:React.FC<IAmountBtnsProps> = ({ increase, decrease, amount }:IAmountBtnsProps) => {
   return (
     <div>
         <button

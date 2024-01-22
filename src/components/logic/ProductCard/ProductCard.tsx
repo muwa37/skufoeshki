@@ -1,5 +1,6 @@
 import React from 'react';
 import {useNavigate} from 'react-router-dom';
+import { IProduct } from '../../../types/types';
 import classes from './ProductCard.module.css'
 
 interface IProps {
@@ -14,7 +15,7 @@ const ProductCard:React.FC<IProps> = (props:IProps) => {
         <div
             className={classes.ProductCard}
             onClick={() => {
-                router(`/products/${props.product.productId}`)
+                router(`/products/${props?.product?.productId}`)
             }}
         >
             <div
@@ -23,17 +24,17 @@ const ProductCard:React.FC<IProps> = (props:IProps) => {
                 <div
                     className={classes.ProductCardImg}
                 >
-                    {props.product.productImg}
+                    {props?.product?.productImg}
                 </div>
                 <div
                     className={classes.ProductCardName}
                 >
-                    {props.product.productTitle}
+                    {props?.product?.productTitle}
                 </div>
                 <div
                     className={classes.ProductCardPrice}
                 >
-                    $ {props.product.productPrice}
+                    $ {props?.product?.productPrice}
                 </div>
             </div>
         </div>

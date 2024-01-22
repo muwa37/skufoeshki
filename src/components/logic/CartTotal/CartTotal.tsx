@@ -3,7 +3,7 @@ import { useCartContext } from '../../../context/CartProvider';
 import { Link } from "react-router-dom";
 import CustomBtn from '../../ui/CustomBtn/CustomBtn';
 
-const CartTotal = () => {
+const CartTotal:React.FC = () => {
   const { cartCount, cartPrice, checkout }:any = useCartContext();
   return (
     <div>

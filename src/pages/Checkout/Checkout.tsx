@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import CustomBtn from '../../components/ui/CustomBtn/CustomBtn';
 
-const Checkout = () => {
+const Checkout:React.FC = () => {
   return (
       <div>
         <div>

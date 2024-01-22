@@ -1,19 +1,15 @@
+import React from 'react';
+
 export interface IProduct{
     productId: string,
     productImg: string,
     productTitle: string,
     productDescription: string,
-    productPrice: number
+    productPrice: number,
 }
 
-export interface IList {
-
-}
-
-export interface IAmountBtnsProps {
-    increase: void,
-    decrease: void,
-    amount?: number
+export interface ICartItem extends IProduct{
+    amount: number
 }
 
 export interface IProductPageParams {
@@ -27,4 +23,11 @@ export interface ICartContext {
     removeItem: void,
     clearCart: void,
     checkout: void,
+    cart?: object
+}
+
+export interface IAmountBtnsProps {
+    increase:React.MouseEventHandler,
+    decrease:React.MouseEventHandler,
+    amount: number
 }

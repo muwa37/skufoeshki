@@ -1,7 +1,7 @@
 import React from 'react';
 import { useCartContext } from '../../../context/CartProvider';
 
-const CartNavBtn = () => {
+const CartNavBtn:React.FC = () => {
     const {cartCount}:any = useCartContext();
 
     return(

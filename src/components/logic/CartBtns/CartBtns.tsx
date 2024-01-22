@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import CustomBtn from '../../ui/CustomBtn/CustomBtn';
 import { useCartContext } from '../../../context/CartProvider';
 
-const CartBtns = () => {
+const CartBtns:React.FC = () => {
     const {clearCart}:any = useCartContext();
 
     return (

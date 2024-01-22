@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import CustomBtn from '../../ui/CustomBtn/CustomBtn';
 
-const EmptyCart = () => {
+const EmptyCart:React.FC = () => {
     return (
         <div>
             <div>

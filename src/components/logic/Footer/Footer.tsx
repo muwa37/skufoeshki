@@ -1,7 +1,7 @@
 import React from "react";
 import classes from './Footer.module.css'
 
-const CustomFooter = () => {
+const CustomFooter:React.FC = () => {
     return (
         <div className={classes.CustomFooter}>
             <h2>

@@ -1,13 +1,13 @@
 import React from "react";
 import classes from './CustomBtn.module.css'
 
-interface IProps {
-    children?:any;
-    props?: any;
-    onClick?: any;
+interface IBtnProps {
+    children?:React.ReactNode;
+    props?: object;
+    onClick?: React.MouseEventHandler;
 }
 
-const CustomBtn:React.FC<IProps>= ({children, ...props}:IProps ) => {
+const CustomBtn:React.FC<IBtnProps>= ({children, ...props}:IBtnProps ) => {
     return (
         <button
             {...props}

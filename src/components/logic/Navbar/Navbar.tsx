@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import classes from './Navbar.module.css'
 import CartNavBtn from '../CartNavBtn/CartNavBtn';
 
-const Navbar = (props:any) => {
+const Navbar:React.FC = () => {
     return (
         <div className={classes.Navbar}>
             <div className={classes.NavbarLinks}>

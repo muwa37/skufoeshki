@@ -5,14 +5,17 @@ import AmountBtns from '../AmountBtns/AmountBtns';
 import { useCartContext } from '../../../context/CartProvider';
 
 import CustomBtn from '../../ui/CustomBtn/CustomBtn';
+import { IProduct } from '../../../types/types';
 
-const AddToCart = ({ product }:any) => {
+interface IAdderProps {
+  product?:IProduct
+}
+
+const AddToCart:React.FC<IAdderProps> = ({ product }) => {
   const { addToCart }:any = useCartContext();
 
-  //? Local State
   const [amount, setAmount] = useState(1);
 
-  //? Handlers
   const increase = () => {
     setAmount((oldAmount) => oldAmount + 1);
   };

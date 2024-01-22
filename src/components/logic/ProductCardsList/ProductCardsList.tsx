@@ -2,9 +2,11 @@ import React from 'react';
 import ProductCard from '../ProductCard/ProductCard';
 import classes from './ProductCardsList.module.css'
 import ProductAdder from '../ProductAdder/ProductAdder'
+import { IProduct } from '../../../types/types';
+
 
 interface IProductCardsList {
-    products: any;
+    products: IProduct[];
 }
 
 const ProductCardList:React.FC<IProductCardsList> = ({products}) => {
@@ -12,7 +14,7 @@ const ProductCardList:React.FC<IProductCardsList> = ({products}) => {
         <div
             className={classes.ProductCardsList}
         >
-            {products.map((product:any) =>
+            {products.map((product:IProduct) =>
                 <div
                     key={product.productId}
                 >

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Contacts = () => {
+const Contacts:React.FC = () => {
     return (
         <div>
             <h1>
