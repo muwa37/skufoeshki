@@ -2,27 +2,35 @@
     position: absolute;
     border: 2px solid #FF9344;
     border-radius: 50%;
-    padding: 12px;
-    top: 18px;
-    left: 6px; 
+    padding: 18px;
+    top: 24px;
+    left: -12px; 
     text-align: center;
     background-color:#979797;
-    opacity: 0.8;
+    opacity: 0.9;
     color: #FF9344;
 }
 .CartCount span {
     position: absolute;
     line-height: 0;
     top: 50%;
-    left: 33%;
+    left: 30%;
     text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 .CartIcon {
-    width: 36px;
-    height: 36px;
-    margin: 12px;
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem;
+    transition: 1s;
+    align-content: center;
 }
+
+
 
 .CartNavContainer {
     position: relative;
+    display: block;
+    align-content: center;
 }

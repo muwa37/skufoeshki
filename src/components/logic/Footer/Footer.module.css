@@ -1,5 +1,21 @@
-.CustomFooter {
-    font-size: 1rem;
+.Footer {
+    font-size: 1.5rem;
     display: flex;
     justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    background-color: #d5e4dd;
+    min-height: 10vh;
+    color: #979797;
+}
+
+.Footer a {
+    text-decoration: none;
+    color: #979797;
+    margin-left: 1rem;
+    transition: 1s;
+}
+
+.Footer a:hover {
+    color: #FC8299;
 }

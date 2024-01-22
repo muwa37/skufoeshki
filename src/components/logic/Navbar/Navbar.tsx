@@ -21,7 +21,7 @@ const Navbar:React.FC = () => {
                     }}
                     to='/home'
                 >
-                    home
+                    о нас
                 </NavLink>
                 <NavLink 
                     className={({ isActive }) => {
@@ -31,7 +31,7 @@ const Navbar:React.FC = () => {
                     }}
                     to='/products'
                 >
-                    products
+                    продукты
                 </NavLink>
                 <NavLink 
                     className={({ isActive }) => {
@@ -41,7 +41,7 @@ const Navbar:React.FC = () => {
                     }}
                     to='/contacts'
                 >
-                    contacts
+                    контакты
                 </NavLink>
             </nav>
             <NavLink 

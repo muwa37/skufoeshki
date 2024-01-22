@@ -1,0 +1,23 @@
+.CustomBtn {
+    margin-right: 24px;
+    padding: 12px;
+    border: 2px solid #ff6346;
+    text-decoration: none;
+    border-radius: 12px;
+    
+    color: #ff6346;
+    font-family: 'Bitter', serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    transition: 1s;
+    background-color: #c3a4c2;
+}
+
+.CustomBtn:hover {
+    opacity: 0.7;
+}
+
+a {
+    text-decoration: none;
+    color: #ff6346;
+}

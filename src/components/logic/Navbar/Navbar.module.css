@@ -1,11 +1,10 @@
 .Navbar {
-    margin-top: 12px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: initial;
-    height: 15%;
-    font-family: 'Bitter', serif;
+    min-height: 15vh;
+    background-color: #d5e4dd;
 }
 
 .NavbarLink{
@@ -14,20 +13,55 @@
     border: 2px solid #979797;
     text-decoration: none;
     border-radius: 12px;
+    
     color: #979797;
+    font-family: 'Bitter', serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    transition: 1s;
 }
 
 .NavbarAppName {
     margin-right: 24px;
-    padding: 12px;
+    padding: 24px;
     border: 2px solid #FF9344;
     text-decoration: none;
     border-radius: 12px;
+
     color:#FF9344;
+    font-family: 'Bitter', serif;
+    font-weight: 600;
+    font-size: 2rem;
+    transition: 1s;
 }
 
 .Navbar a.active {
     color: #FC8299;
     border: 2px solid #FC8299;
 
+}
+
+.NavbarLink:hover{
+    color: #FC8299;
+    border: 2px solid #FC8299;
+}
+
+.NavbarAppName:hover{
+    color: #FC8299;
+    border: 2px solid #FC8299;
+}
+
+.NavbarCart {
+    background-color: #FC8299;
+    border-radius: 50%;
+    margin-right: 26px;
+    transition: 1s;
+    
+}
+
+.NavbarCart:hover {
+    -webkit-box-shadow: 12px 12px 8px 0px rgba(195, 164, 194, 0.5);
+    -moz-box-shadow: 12px 12px 8px 0px rgba(195, 164, 194, 0.5);
+    box-shadow: 12px 12px 8px 0px rgba(195, 164, 194, 0.5);
+    filter: brightness(.9);
 }

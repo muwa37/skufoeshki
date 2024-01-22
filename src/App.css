@@ -51,3 +51,10 @@ textarea,
 select {
   font: inherit;
 }
+
+main {
+  padding: 24px;
+  min-height: 75vh;
+  background: rgb(213,228,221);
+  background: linear-gradient(180deg, rgba(213,228,221,1) 0%, rgba(195,164,194,1) 50%, rgba(213,228,221,1) 100%);
+}
