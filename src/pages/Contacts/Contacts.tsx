@@ -26,14 +26,14 @@ const Contacts:React.FC = () => {
                 <a href="https://github.com/muwa37">
                     <img 
                         className={classes.ContactsImg}
-                        src={require("../../assets/GitHub.png")} 
+                        src={require("../../assets/images/icons/GitHub.png")} 
                         alt="git" 
                     />
                 </a>
                 <a href="https://t.me/qvsemv4atike">
                     <img 
                         className={classes.ContactsImg}
-                        src={require ("../../assets/Telegram.png")} 
+                        src={require ("../../assets/images/icons/Telegram.png")} 
                         alt="telegram" 
                     />
                 </a>  

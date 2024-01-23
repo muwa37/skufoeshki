@@ -8,6 +8,12 @@
     padding: 12px 12px 0 12px;
 }
 
+.NavbarLinks {
+    width: 50vw;
+    display: flex;
+    justify-content: end;
+}
+
 .NavbarLink{
     margin-right: 24px;
     padding: 12px;

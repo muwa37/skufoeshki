@@ -11,7 +11,7 @@ const CartNavBtn:React.FC = () => {
             className={classes.CartNavContainer}
         >
             <img 
-                src={require('../../../assets/ShoppingCart.png')}
+                src={require('../../../assets/images/icons/ShoppingCart.png')}
                 alt="cart" 
                 className={classes.CartIcon}
             />

@@ -5,12 +5,13 @@ import classes from './ErrorPage.module.css'
 
 const ErrorPage:React.FC = () => {
   return (
-    <div>
+    <div 
+      className={classes.ErrorPageMain}
+    >
         <div 
           className={classes.ErrorPageTitle}
         >
-            404 <br/>
-          Такой странички нету...
+          404: Такой странички нету...
         </div>
       <CustomBtn>
         <Link to="/">На главную</Link>

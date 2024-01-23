@@ -3,7 +3,7 @@ import { IProduct } from '../types/types';
 const fakeResponse = [
     {
         productId:'1',
-        productImg: 'link to img1',
+        productImg: '../../../assets/images/products/Arahis.png',
         productTitle: 'sample title1',
         productDescription: 'sample description1',
         productPrice: 1337

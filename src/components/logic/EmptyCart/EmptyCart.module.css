@@ -1,10 +1,10 @@
-.ErrorPageTitle {
+.EmptyCartTitle {
     font-weight: 800;
     color: #979797;
     font-size: 2rem;
 }
 
-.ErrorPageMain {
+.EmptyCartMain {
     display: flex;
     flex-direction: column;
     align-items: center;

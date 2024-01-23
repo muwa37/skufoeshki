@@ -1,6 +1,5 @@
 import React from 'react';
 import {useNavigate} from 'react-router-dom';
-import { IProduct } from '../../../types/types';
 import classes from './ProductCard.module.css'
 
 interface IProps {
@@ -10,6 +9,7 @@ interface IProps {
 
 const ProductCard:React.FC<IProps> = (props:IProps) => {
     const router = useNavigate();
+    const imgLink = '../../../assets/images/products/Beerka.png'
 
     return (
         <div
@@ -24,7 +24,10 @@ const ProductCard:React.FC<IProps> = (props:IProps) => {
                 <div
                     className={classes.ProductCardImg}
                 >
-                    <img src={props?.product?.productImg} alt={props?.product?.productId} />
+                    <img 
+                        src={require(imgLink)}
+                        alt={props?.product?.productId} 
+                    />
                 </div>
                 <div
                     className={classes.ProductCardName}

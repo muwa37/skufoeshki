@@ -32,7 +32,7 @@ const Home:React.FC = () => {
                 className={classes.HomeImage}
             >
                 <img
-                    src={require('../../assets/SkufShrek.png')}
+                    src={require('../../assets/images/others/SkufShrek.png')}
                     alt="skuf" 
                     
                 />
