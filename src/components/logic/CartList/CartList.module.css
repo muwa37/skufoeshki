@@ -1,0 +1,6 @@
+.CartList {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50vw;
+    justify-content: space-between;
+}

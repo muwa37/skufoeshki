@@ -4,7 +4,9 @@ import classes from './AmountBtns.module.css'
 
 const AmountBtns:React.FC<IAmountBtnsProps> = ({ increase, decrease, amount }:IAmountBtnsProps) => {
   return (
-    <div>
+    <div
+      className={classes.AmountBtns}
+    >
         <button
           className={classes.AmountBtnsDecrease}
           type='button'

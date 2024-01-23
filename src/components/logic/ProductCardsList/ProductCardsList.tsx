@@ -16,6 +16,7 @@ const ProductCardList:React.FC<IProductCardsList> = ({products}) => {
         >
             {products.map((product:IProduct) =>
                 <div
+                    className={classes.ProductCardContainer}
                     key={product.productId}
                 >
                     <ProductCard

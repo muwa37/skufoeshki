@@ -6,13 +6,17 @@ import EmptyCart from '../../components/logic/EmptyCart/EmptyCart';
 
 import { useCartContext } from '../../context/CartProvider';
 
+import classes from './Cart.module.css'
+
 const Cart:React.FC = () => {
     const {cart}:any= useCartContext();
 
     if (cart.length < 1) return <EmptyCart/>;
 
     return (
-        <div>
+        <div
+            className={classes.Cart}
+        >
             <CartList/>
             <CartTotal/>
         </div>

@@ -7,6 +7,8 @@ import { useCartContext } from '../../../context/CartProvider';
 import CustomBtn from '../../ui/CustomBtn/CustomBtn';
 import { IProduct } from '../../../types/types';
 
+import classes from './ProductAdder.module.css'
+
 interface IAdderProps {
   product?:IProduct
 }
@@ -30,14 +32,16 @@ const AddToCart:React.FC<IAdderProps> = ({ product }) => {
   };
 
   return (
-    <>
+    <div
+      className={classes.ProductAdder}
+    >
       <AmountBtns amount={amount} increase={increase} decrease={decrease} />
       <CustomBtn 
         onClick={() => addToCart(product, amount)}
       >
-          Add to cart
+        В корзину
       </CustomBtn>
-    </>
+    </div>
   );
 };
 

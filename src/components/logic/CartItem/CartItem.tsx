@@ -3,7 +3,10 @@ import { Link } from "react-router-dom";
 import { useCartContext } from '../../../context/CartProvider';
 import { ICartItem } from '../../../types/types';
 
+import classes from './CartItem.module.css'
+
 import AmountBtns from '../AmountBtns/AmountBtns';
+import CustomBtn from "../../ui/CustomBtn/CustomBtn";
 
 const CartItem:React.FC<ICartItem> = ({ productTitle, productPrice, amount, productId, productImg }:ICartItem) => {
     const { toggleAmount, removeItem }:any = useCartContext();
@@ -16,21 +19,24 @@ const CartItem:React.FC<ICartItem> = ({ productTitle, productPrice, amount, prod
     };
 
     return (
-        <div>
-            <div className={''}>
+        <div
+            className={classes.CartItemContent}
+        >
                 <img 
+                    className={classes.CartItemImg}
                     src={productImg} 
                     alt={productId} 
                 />
-            </div>
-            <div className={''}>
+            <div className={classes.CartItemName}>
                 <Link 
                     to={`/products/${productId}`} 
                     title={productTitle}
                 >
                     {productTitle}
                 </Link>
-                <div>
+                <div
+                    className={classes.CartItemPrice}
+                >
                     $ {productPrice} x {amount} :
                     <br />
                     <span>
@@ -43,12 +49,11 @@ const CartItem:React.FC<ICartItem> = ({ productTitle, productPrice, amount, prod
                 increase={increase} 
                 decrease={decrease} 
             />
-            <button
-                className={''}
+            <CustomBtn
                 onClick={() => removeItem(productId)}
             >
                 remove item
-            </button>
+            </CustomBtn>
         </div>
     );
 };

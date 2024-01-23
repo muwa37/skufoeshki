@@ -3,21 +3,23 @@ import { Link } from 'react-router-dom';
 import CustomBtn from '../../ui/CustomBtn/CustomBtn';
 import { useCartContext } from '../../../context/CartProvider';
 
+import classes from './CartBtns.module.css'
+
 const CartBtns:React.FC = () => {
     const {clearCart}:any = useCartContext();
 
     return (
-        <div className='cart__links'>
+        <div className={classes.CartBtns}>
             <CustomBtn 
             >
                 <Link to='/products'>
-                    Buy more
+                    Купить еще
                 </Link>
             </CustomBtn>
             <CustomBtn
                 onClick={clearCart}
             >
-                Clear cart
+                Очистить
             </CustomBtn>
         </div>
     )
