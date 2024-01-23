@@ -31,21 +31,11 @@ const Home:React.FC = () => {
             <div
                 className={classes.HomeImage}
             >
-                <img 
-                    className={classes.HomeImageImg}
-                    src={require('../../assets/SkufShrek2.png')}
+                <img
+                    src={require('../../assets/SkufShrek.png')}
                     alt="skuf" 
                     
                 />
-                <div
-                    className={classes.HomeImageDop}
-                >
-                <img 
-                    src={require('../../assets/Kirieshki.png')}
-                    alt="skuf" 
-                    
-                />
-                </div>
             </div>
         </div>
     )
