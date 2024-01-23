@@ -22,11 +22,6 @@
   },
   "include": [
     "src",
-    "src/declaration.d.ts",
     "types/index.d.ts"
-, "images.d.ts"  ],
-  "typeRoots": [
-    "node_modules/@types",
-    "src/types"
-  ]
+  ],
 }
