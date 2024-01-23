@@ -23,20 +23,13 @@
 }
 
 .HomeImage {
+    overflow: hidden;
     position: relative;
-    padding: 15% 20%;
-    opacity: 0.6;
+    opacity: 0.7;
     filter: brightness(.7);
     border: 2px solid #FF9344;
     border-radius: 12px;
-}
-
-.HomeImageImg {
-    position: absolute;
-    top: 5%;
-    left: 40%;
-    height: 90%;
-    width: auto;
+    width: 30%;
 }
 
 .HomeImageDop {

@@ -5,6 +5,7 @@
     color: initial;
     min-height: 15vh;
     background-color: #d5e4dd;
+    padding: 12px 12px 0 12px;
 }
 
 .NavbarLink{
@@ -22,8 +23,7 @@
 }
 
 .NavbarAppName {
-    margin-right: 24px;
-    padding: 24px;
+    padding: 18px;
     border: 2px solid #FF9344;
     text-decoration: none;
     border-radius: 12px;
@@ -54,7 +54,6 @@
 .NavbarCart {
     background-color: #FC8299;
     border-radius: 50%;
-    margin-right: 26px;
     transition: 1s;
     
 }

@@ -53,6 +53,9 @@ select {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 24px;
   min-height: 75vh;
   background: rgb(213,228,221);

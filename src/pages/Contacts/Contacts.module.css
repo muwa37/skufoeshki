@@ -1,6 +1,7 @@
 .ContactsMain {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .ContactsContainer {
@@ -16,6 +17,14 @@
 }
 
 .ContactsImg {
-    min-height: 48px;
+    max-height: 30px;
     align-content: center;
+}
+
+.ContactsImages {
+    min-height: 96px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    opacity: 0.7;
 }

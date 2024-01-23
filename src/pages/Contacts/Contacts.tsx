@@ -12,27 +12,31 @@ const Contacts:React.FC = () => {
                 <h1 
                     className={classes.ContactsTitle}
                 >
-                    Посмотреть код автора
+                    Посмотреть код
                 </h1>    
                 <h1 
                     className={classes.ContactsTitle}
                 >
-                    Пообщаться с автором
+                    Пообщаться
                 </h1>         
             </div>
             <div
                 className={classes.ContactsImages}
             >   
-                <img 
-                    className={classes.ContactsImg}
-                    src="" 
-                    alt="git" 
-                />  
-                <img 
-                    className={classes.ContactsImg}
-                    src="" 
-                    alt="telegram" 
-                />
+                <a href="https://github.com/muwa37">
+                    <img 
+                        className={classes.ContactsImg}
+                        src={require("../../assets/GitHub.png")} 
+                        alt="git" 
+                    />
+                </a>
+                <a href="https://t.me/qvsemv4atike">
+                    <img 
+                        className={classes.ContactsImg}
+                        src={require ("../../assets/Telegram.png")} 
+                        alt="telegram" 
+                    />
+                </a>  
             </div>
         </div>
     )
