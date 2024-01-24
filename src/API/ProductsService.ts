@@ -40,7 +40,7 @@ const fakeResponse = [
         productId:'6',
         productImg: '/assets/images/products/Semki.png',
         productTitle: 'Семечки',
-        productDescription: 'На пенек сел - косарь должен.',
+        productDescription: 'Old but gold.',
         productPrice: 0.777
     },
     {

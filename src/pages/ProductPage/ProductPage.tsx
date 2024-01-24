@@ -25,14 +25,16 @@ const ProductPage:React.FC = () => {
             <CustomBtn
                 onClick={() => router(`/products`)}
             >
-                back to all products
+                Вернуться ко всем снекам
             </CustomBtn>
             <div
                 className={classes.Product}
             >
-                <div className={classes.ProductImg}>
-                    <img src={product?.productImg} alt={product?.productId} />
-                </div>
+                <img 
+                    className={classes.ProductImg}
+                    src={product?.productImg} 
+                    alt={product?.productTitle} 
+                />
                 <div
                     className={classes.ProductBody}
                 >

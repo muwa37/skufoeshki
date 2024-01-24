@@ -44,16 +44,20 @@ const CartItem:React.FC<ICartItem> = ({ productTitle, productPrice, amount, prod
                     </span>
                 </div>
             </div>
-            <AmountBtns 
-                amount={amount} 
-                increase={increase} 
-                decrease={decrease} 
-            />
-            <CustomBtn
-                onClick={() => removeItem(productId)}
+            <div
+                className={classes.CartItemBtns}
             >
-                remove item
-            </CustomBtn>
+                <AmountBtns 
+                    amount={amount} 
+                    increase={increase} 
+                    decrease={decrease} 
+                />
+                <CustomBtn
+                    onClick={() => removeItem(productId)}
+                >
+                    Удалить
+                </CustomBtn>
+            </div>
         </div>
     );
 };

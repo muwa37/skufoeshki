@@ -1,0 +1,44 @@
+.ProductPage {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+}
+
+.Product {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+
+    border: 2px solid #ff6346;
+    border-radius: 12px;
+    margin-top: 12px;
+    padding: 12px;
+}
+
+.ProductImg {
+    max-height: 50vh;
+    filter: brightness(0.8);
+    opacity: 0.9;
+}
+
+.ProductTitle {
+    font-weight: 800;
+    font-size: 2rem;
+    color: #979797;
+}
+
+.ProductPrice {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #979797;
+}
+
+.ProductDescription {
+    font-weight: 600;
+    font-size: 1.7rem;
+    color: #979797;
+}
