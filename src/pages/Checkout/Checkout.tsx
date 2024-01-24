@@ -5,13 +5,31 @@ import classes from './Checkout.module.css'
 
 const Checkout:React.FC = () => {
   return (
-      <div>
-        <div className={classes.CheckoutTitle}>
-            Спасибо за покупки^^
+      <div
+        className={classes.Checkout}
+      >
+        <div
+          className={classes.CheckoutContainer}
+        >
+          <h2
+            className={classes.CheckoutSubTitle}
+          >
+            СПАСИБО ЗА ПОКУПКИ^^
+          </h2>
+          <div className={classes.CheckoutTitle}>
+            Играя в танки один не скуфей - 
+            <br/>
+            возьми с собой альтушку Дель Рей.
+          </div>
+          <CustomBtn>
+            <Link to='/products'>Еще снеков!</Link>
+          </CustomBtn>
         </div>
-        <CustomBtn>
-          <Link to='/products'>Еще снеков!</Link>
-        </CustomBtn>
+        <img 
+          className={classes.CheckoutImg}
+          src={require("../../assets/images/others/Altushka.jpg")}
+          alt="altushka-del-rey" 
+        />
       </div>
   );
 };
