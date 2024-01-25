@@ -9,6 +9,7 @@ import Checkout from '../pages/Checkout/Checkout';
 const routes = [
     {path: '/', element: <Home/>},
     {path: '/home', element: <Home/>},
+    {path: '/skufoeshki', element: <Home/>},
     {path: '/products', element: <Products/>},
     {path: '/products/:id', element: <ProductPage/>},
     {path: '/contacts', element: <Contacts/>},
