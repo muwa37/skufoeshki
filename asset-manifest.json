@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/skufoeshki/static/css/main.7051b469.css",
+    "main.js": "/skufoeshki/static/js/main.b5522168.js",
+    "static/media/SkufShrek.png": "/skufoeshki/static/media/SkufShrek.f0950c4519f7b79933d8.png",
+    "static/media/SirColbas.png": "/skufoeshki/static/media/SirColbas.0a284a002cd15a34ebb7.png",
+    "static/media/Arahis.png": "/skufoeshki/static/media/Arahis.9171b2fa7182a5f10f63.png",
+    "static/media/Semki.png": "/skufoeshki/static/media/Semki.bfba378a4be451c919cc.png",
+    "static/media/Kireeshki.png": "/skufoeshki/static/media/Kireeshki.25735a3320d849491a01.png",
+    "static/media/Shipuchki.png": "/skufoeshki/static/media/Shipuchki.84c096d4d4752205df40.png",
+    "static/media/Sirceedi.png": "/skufoeshki/static/media/Sirceedi.eadbcad4d17f711597d9.png",
+    "static/media/Beerka.png": "/skufoeshki/static/media/Beerka.97d3ce3fc8438d2888ec.png",
+    "static/media/Pringles.png": "/skufoeshki/static/media/Pringles.3be05e3a8e2a40bef2eb.png",
+    "static/media/Doritos.png": "/skufoeshki/static/media/Doritos.2d19743c51840d73b629.png",
+    "static/media/Altushka.jpg": "/skufoeshki/static/media/Altushka.7fa4369eae88bb91bc88.jpg",
+    "index.html": "/skufoeshki/index.html",
+    "main.7051b469.css.map": "/skufoeshki/static/css/main.7051b469.css.map",
+    "main.b5522168.js.map": "/skufoeshki/static/js/main.b5522168.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7051b469.css",
+    "static/js/main.b5522168.js"
+  ]
+}
