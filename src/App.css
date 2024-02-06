@@ -2,12 +2,12 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 ul[class],
 ol[class] {
-  padding: 0;
+	padding: 0;
 }
 
 body,
@@ -24,41 +24,46 @@ figcaption,
 blockquote,
 dl,
 dd {
-  margin: 0;
+	margin: 0;
 }
 
 body {
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-  font-family: 'Bitter', serif;
+	min-height: 100vh;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+	font-family: 'Bitter', serif;
 }
 
 ul[class],
 ol[class] {
-  list-style: none;
+	list-style: none;
 }
 
 img {
-  max-width: 100%;
-  display: block;
+	max-width: 100%;
+	display: block;
 }
 
 input,
 button,
 textarea,
 select {
-  font: inherit;
+	font: inherit;
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 24px;
-  min-height: 75vh;
-  background: rgb(213,228,221);
-  background: linear-gradient(180deg, rgba(213,228,221,1) 0%, rgba(195,164,194,1) 50%, rgba(213,228,221,1) 100%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 24px;
+	min-height: 75vh;
+	background: rgb(213, 228, 221);
+	background: linear-gradient(
+		180deg,
+		rgba(213, 228, 221, 1) 0%,
+		rgba(195, 164, 194, 1) 50%,
+		rgba(213, 228, 221, 1) 100%
+	);
 }

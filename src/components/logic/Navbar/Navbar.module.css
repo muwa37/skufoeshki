@@ -1,71 +1,69 @@
 .Navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: initial;
-    min-height: 15vh;
-    background-color: #d5e4dd;
-    padding: 12px 12px 0 12px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: initial;
+	min-height: 15vh;
+	background-color: #d5e4dd;
+	padding: 12px 12px 0 12px;
 }
 
 .NavbarLinks {
-    width: 50vw;
-    display: flex;
-    justify-content: end;
+	width: 50vw;
+	display: flex;
+	justify-content: end;
 }
 
-.NavbarLink{
-    margin-right: 24px;
-    padding: 12px;
-    border: 2px solid #979797;
-    text-decoration: none;
-    border-radius: 12px;
-    
-    color: #979797;
-    font-family: 'Bitter', serif;
-    font-weight: 600;
-    font-size: 1.5rem;
-    transition: 1s;
+.NavbarLink {
+	margin-right: 24px;
+	padding: 12px;
+	border: 2px solid #979797;
+	text-decoration: none;
+	border-radius: 12px;
+
+	color: #979797;
+	font-family: 'Bitter', serif;
+	font-weight: 600;
+	font-size: 1.5rem;
+	transition: 1s;
 }
 
 .NavbarAppName {
-    padding: 18px;
-    border: 2px solid #FF9344;
-    text-decoration: none;
-    border-radius: 12px;
+	padding: 18px;
+	border: 2px solid #ff9344;
+	text-decoration: none;
+	border-radius: 12px;
 
-    color:#FF9344;
-    font-weight: 600;
-    font-size: 2rem;
-    transition: 1s;
+	color: #ff9344;
+	font-weight: 600;
+	font-size: 2rem;
+	transition: 1s;
 }
 
 .Navbar a.active {
-    color: #FC8299;
-    border: 2px solid #FC8299;
-
+	color: #fc8299;
+	border: 2px solid #fc8299;
 }
 
-.NavbarLink:hover{
-    color: #FC8299;
-    border: 2px solid #FC8299;
+.NavbarLink:hover {
+	color: #fc8299;
+	border: 2px solid #fc8299;
 }
 
-.NavbarAppName:hover{
-    color: #FC8299;
-    border: 2px solid #FC8299;
+.NavbarAppName:hover {
+	color: #fc8299;
+	border: 2px solid #fc8299;
 }
 
 .NavbarCart {
-    background-color: #FC8299;
-    border-radius: 50%;
-    transition: 1s;
-    
+	background-color: #fc8299;
+	border-radius: 50%;
+	transition: 1s;
 }
 
 .NavbarCart:hover {
-    -webkit-box-shadow: 12px 12px 8px 0px rgba(195, 164, 194, 0.5);
-    -moz-box-shadow: 12px 12px 8px 0px rgba(195, 164, 194, 0.5);
-    box-shadow: 12px 12px 8px 0px rgba(195, 164, 194, 0.5);
-    filter: brightness(.9);
+	-webkit-box-shadow: 12px 12px 8px 0px rgba(195, 164, 194, 0.5);
+	-moz-box-shadow: 12px 12px 8px 0px rgba(195, 164, 194, 0.5);
+	box-shadow: 12px 12px 8px 0px rgba(195, 164, 194, 0.5);
+	filter: brightness(0.9);
 }

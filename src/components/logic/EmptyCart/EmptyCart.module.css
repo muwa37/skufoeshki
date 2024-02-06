@@ -1,11 +1,11 @@
 .EmptyCartTitle {
-    font-weight: 800;
-    color: #979797;
-    font-size: 2rem;
+	font-weight: 800;
+	color: #979797;
+	font-size: 2rem;
 }
 
 .EmptyCartMain {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }

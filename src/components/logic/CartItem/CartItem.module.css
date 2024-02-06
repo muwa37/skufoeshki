@@ -1,41 +1,40 @@
 .CartItemContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 
-    width: 100%;
-    height: 30%;
-    border: 2px solid #ff6346;
-    border-radius: 12px;
-    margin: 0 1.5% 3%;
-    padding: 12px;
-    transition: 1s;
+	width: 100%;
+	height: 30%;
+	border: 2px solid #ff6346;
+	border-radius: 12px;
+	margin: 0 1.5% 3%;
+	padding: 12px;
+	transition: 1s;
 }
 
 .CartItemImg {
-    max-height: 40vh;
-    width: auto;
-    filter: brightness(0.8);
-    opacity: 0.9;
+	max-height: 40vh;
+	width: auto;
+	filter: brightness(0.8);
+	opacity: 0.9;
 }
 
 .CartItemName {
-    font-weight: 800;
-    color: #979797;
-    font-size: 2rem;
+	font-weight: 800;
+	color: #979797;
+	font-size: 2rem;
 }
 
 .CartItemPrice {
-    font-weight: 600;
-    color: #979797;
-    font-size: 1.5rem;
+	font-weight: 600;
+	color: #979797;
+	font-size: 1.5rem;
 }
 
 .CartItemBtns {
-    width: 100%;
+	width: 100%;
 
-    display: flex;
-    justify-content: space-evenly;
+	display: flex;
+	justify-content: space-evenly;
 }
-
